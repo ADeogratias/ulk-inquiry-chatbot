@@ -7,6 +7,8 @@ import json #for reading the file random responses
 import pickle
 from nltk.stem import WordNetLemmatizer #reduce the word to a stem
 from tensorflow.keras.models import load_model 
+
+pip install nltk
 import nltk
 nltk.download('punkt', quiet=True)
 nltk.download('averaged_perceptron_tagger')
