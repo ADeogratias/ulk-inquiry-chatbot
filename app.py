@@ -78,7 +78,7 @@ while True:
   ints = predict_class(message)
   res = get_reponse(ints, intents)
   if st.button("Send"):
-    st.success(' 'message + '\n')
+    st.success(' '+ message + '\n')
     st.success('Sofia: {}'.format(res)+ '\n')
     st.markdown(html_temp, unsafe_allow_html=True)
     st.write(message)
