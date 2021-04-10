@@ -2,12 +2,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import nltk
 import random #for choosing random responses
 import json #for reading the file random responses
 import pickle
 from nltk.stem import WordNetLemmatizer #reduce the word to a stem
 from tensorflow.keras.models import load_model 
+import nltk
+nltk.download('punkt', quiet=True)
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 
 intents = json.loads(open('intents.json').read())
 
