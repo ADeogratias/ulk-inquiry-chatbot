@@ -77,7 +77,6 @@ st.markdown(html_temp, unsafe_allow_html=True)
 # related = []
 
 while True:
-  message = input("")
   message = st.text_input("Lets Chat, How can I help?", "")
   ints = predict_class(message)
   res = get_reponse(ints, intents)
