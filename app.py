@@ -69,52 +69,34 @@ def get_reponse(intents_list, intents_json):
 
 # get user input from text_input
 def get_text():
-    input_text = st.text_input("Laura: ","How can I help?")
+    input_text = st.text_input("You: ","")
     return input_text
 
 st.title("Laura Your ULK Admission Chat Bot")
-st.text("What would you like to know about programs at ULK?")
-# html_temp = """
-# <div style="background-color:black;padding:10px">
-# <h3 style="color:white;"> Hello, I am Laura. I will answer your queries about ULK degree program.</h3>
-# </div>
-# """
-# st.markdown(html_temp, unsafe_allow_html=True)
+
+html_temp = """
+<div style="background-color:black;padding:10px">
+<h5 style="color:white;"> What would you like to know about programs at ULK?</h5>
+</div>
+"""
+st.markdown(html_temp, unsafe_allow_html=True)
+# st.text("What would you like to know about programs at ULK?")
+st.text("type your question in the field below and press enter to know get your answer")
 
 with st.spinner("Loading Model Into Memory..."):
   model = loadModel()
 
 message = get_text()
-# if st.button("Send"):
-#   ints = predict_class(message)
-#   res = get_reponse(ints, intents)
-#   st.write(message)
-#   with st.spinner("..."):
-#     st.success('Sofia: {}'.format(res)+ '\n')
-
-if message:
+if st.button("Ask"):
   ints = predict_class(message)
   res = get_reponse(ints, intents)
   st.write(message)
   with st.spinner("..."):
     st.success('Sofia: {}'.format(res)+ '\n')
-    
-# while True:
-#   message = input("")
-#   message = st.text_input("Lets Chat, How can I help?", "")
-#   ints = predict_class(message)
-#   res = get_reponse(ints, intents)
-#   if st.button("Send"):
-#     st.success(' '+ message + '\n')
-#     st.success('Sofia: {}'.format(res)+ '\n')
-#     st.write(message)
-#     st.write(res)
 
-# front end elements of the web page 
-# html_temp = """ 
-# <div style ="background-color:black;padding:10px"> 
-# <h1 style ="color:white;">Articles that are related</h1> 
-# </div> 
-# """ 
-# st.markdown(html_temp, unsafe_allow_html=True)
-# st.write(related)
+else if message:
+  ints = predict_class(message)
+  res = get_reponse(ints, intents)
+  st.write(message)
+  with st.spinner("..."):
+    st.success('Sofia: {}'.format(res)+ '\n')
