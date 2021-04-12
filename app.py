@@ -94,7 +94,7 @@ if st.button("Ask"):
   with st.spinner("..."):
     st.success('Sofia: {}'.format(res)+ '\n')
 
-else if message:
+elif message:
   ints = predict_class(message)
   res = get_reponse(ints, intents)
   st.write(message)
