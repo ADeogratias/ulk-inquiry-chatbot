@@ -72,7 +72,7 @@ def get_text():
     input_text = st.text_input("You: ","")
     return input_text
 
-st.title("Laura Your ULK Admission Chat Bot")
+st.title("Laura ULK ChatBot")
 
 html_temp = """
 <div style="background-color:black;padding:10px">
