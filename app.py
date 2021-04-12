@@ -99,4 +99,4 @@ elif message:
   res = get_reponse(ints, intents)
   st.write('You: {}'.format(message)+ '\n')
   with st.spinner("..."):
-    st.success('You: {}'.format(res)+ '\n')
+    st.success('Laura: {}'.format(res)+ '\n')
