@@ -84,7 +84,7 @@ st.text("What would you like to know about programs at ULK?")
 with st.spinner("Loading Model Into Memory..."):
   model = loadModel()
 
-# message = get_text()
+message = get_text()
 # if st.button("Send"):
 #   ints = predict_class(message)
 #   res = get_reponse(ints, intents)
