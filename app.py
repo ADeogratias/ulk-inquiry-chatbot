@@ -81,7 +81,7 @@ html_temp = """
 """
 st.markdown(html_temp, unsafe_allow_html=True)
 # st.text("What would you like to know about programs at ULK?")
-st.text("type your question in the field below and press enter to know get your answer")
+st.text("type your question in the field below and press enter and get your answer")
 
 with st.spinner("Loading Model Into Memory..."):
   model = loadModel()
@@ -90,13 +90,13 @@ message = get_text()
 if st.button("Ask"):
   ints = predict_class(message)
   res = get_reponse(ints, intents)
-  st.write(message)
+  st.write('You: {}'.format(message)+ '\n')
   with st.spinner("..."):
-    st.success('Sofia: {}'.format(res)+ '\n')
+    st.success('Laura: {}'.format(res)+ '\n')
 
 elif message:
   ints = predict_class(message)
   res = get_reponse(ints, intents)
-  st.write(message)
+  st.write('You: {}'.format(message)+ '\n')
   with st.spinner("..."):
-    st.success('Sofia: {}'.format(res)+ '\n')
+    st.success('You: {}'.format(res)+ '\n')
