@@ -1,0 +1,211 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "I need help",
+        "Good day",
+        "How are you doing?"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+
+    {
+      "tag": "name",
+      "patterns": [
+        "What's your name?",
+        "How do people call you?",
+        "How can I call you?",
+        "Who are you?",
+        "Your name?",
+        "Your name is Laura, right?",
+        "You're Laura, right?",
+        "Who is this?"
+      ],
+      "responses": [
+        "My name is Laura, How can I help you?",
+        "Laura, here to help you answer admission question at ULK. How can I help you?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Hasta la vista, baby"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+        "What are the degree programs offered at ULK?",
+        "What programs can I study at ULK?",
+        "What do you offer?",
+        "What options are there for me to choose from?",
+        "Why study at ULK?",
+        "What majors does the school have?",
+        "What majors found at ULK?",
+        "Tell me more about the degree programs",
+        "departments?",
+        "what subjects are offered or found at ULK?"
+      ],
+      "responses": [
+        "We offer Population studies, Rural Development, Accounting, Economics, Computer Science, Development Studies, Internations Relations, Law, Finance",
+        "You can major in Population studies, Rural Development, Accounting, Economics, Computer Science, Development Studies, Internations Relations, Law, Finance"
+      ]
+    },
+      {
+      "tag": "programs",
+      "patterns": [
+        "What are the degree programs offered at ULK?",
+        "What programs can I study at ULK?",
+        "What do you offer?",
+        "What options are there for me to choose from?",
+        "Why study at ULK?",
+        "What majors does the school have?",
+        "What majors found at ULK?",
+        "How many programs does ULK have?",
+        "Tell me more about the degree programs",
+        "what subjects are offered or found at ULK?",
+        "what subjects can I study at night?",
+        "what programs can I fulltime?",
+        "what programs can I study during the day?"
+      ],
+      "responses": [
+        "We offer 9 different programs. Population studies, Rural Development, Accounting, Economics, Computer Science, Development Studies, Internations Relations, Law and Finance",
+        "You can major in one of the 9 programs we have. Population studies, Rural Development, Accounting, Economics, Computer Science, Development Studies, Internations Relations, Law and Finance"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "What is the time we study?",
+        "Full time students study hours at ULK?",
+        "time to study?",
+        "Do you have day and night programs?",
+        "Do you have night program?",
+        "Do you have day program?",
+        "What time do day study study?",
+        "What time do night students study?"
+      ],
+      "responses": [
+        "We offer full time and night shift to our students. Full time students start from 8am to 4pm, and night students start  from 5pm to 9pm"
+      ]
+    },
+    {
+      "tag": "cost",
+      "patterns": [
+        "How much is the program?",
+        "Is the program expensive?",
+        "Can I afford this school?",
+        "How affordable is ULK?",
+        "What is the cost of attending ULK?"
+      ],
+      "responses": [
+        "Budget at first around 800,000 Rwf including registration fees and tuition, but normally the cost is 660,000 RFW for evening and 600,000 RFW for day per year"
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?",
+        "How many campuses does ULK have?"
+      ],
+      "responses": [
+        "we have campuses. One is in Kigali and the other one is based in Gisenyi. They both operate the same way. You are welcome to join one of them."
+      ]
+    },
+    {
+      "tag": "duration",
+      "patterns": [
+        "How long does it take to complete a program?",
+        "How many years will it take me to finish?",
+        "Programs duration",
+        "How long does a degree take?",
+        "How long does a programs last at ULK?",
+        "Major length?",
+        "School years to compeletion"
+      ],
+      "responses": [
+        "Programs take around 3 year to get a Degree (A0) and 2 years for a Diploma.",
+        "Budget 3 year to get a Degree (A0) and 2 years for a Diploma."
+      ]
+    },
+    {
+      "tag": "prerequisite",
+      "patterns": [
+        "What is needed to be admitted?",
+        "How do I get admission?",
+        "What are the requirements to get admitted at ULK?",
+        "I need to study here",
+        "apply",
+        "I want to apply to ULK"
+      ],
+      "responses": [
+        "You are required to bring a Rwandan Advanced General Certificate of Secondary Education (or its equivalent)",
+        "To secure your seat, bring a Rwandan Advanced General Certificate of Secondary Education (or its equivalent)"
+      ]
+    },
+        {
+      "tag": "pandemic",
+      "patterns": [
+        "Are students going to school?",
+        "How are student learning now?",
+        "has COVID made student be shifted to learning online?"
+      ],
+      "responses": [
+        "The current system at ULK is not fit to transition and operate online smoothly. Therefore, students are recommended to look for internships or do other short online courses to enhance their learning."
+      ]
+    },
+    {
+      "tag": "irrelevant",
+      "patterns": [
+        "What can you do?",
+        "How old are you?",
+        "Who created you?",
+        "You suck",
+        "You are very boring",
+        "Why are you boring?",
+        "I do not care",
+        "Who is the owner of the school?",
+        "Damn it",
+        "Dammit"
+      ],
+      "responses": [
+        "Take it easy. I am only a robot. I can only help know about degree programs at our school ULK",
+        "I am still growing. I am not sure I know what you are talking about, but you can ask me about majors at ULK or contact Deo Amani who created me"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "I once tried learning Kinyarwanda in one day, and learnt the word mbabarira uryame.",
+        "Guess the name of a company that eats your money every where you go? MTN",
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
