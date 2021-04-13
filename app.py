@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -90,13 +89,13 @@ message = get_text()
 if st.button("Ask"):
   ints = predict_class(message)
   res = get_reponse(ints, intents)
-  st.write('You: {}'.format(message)+ '\n')
   with st.spinner("..."):
     st.success('Laura: {}'.format(res)+ '\n')
+  st.write('You: {}'.format(message)+ '\n')
 
 elif message:
   ints = predict_class(message)
   res = get_reponse(ints, intents)
-  st.write('You: {}'.format(message)+ '\n')
   with st.spinner("..."):
     st.success('Laura: {}'.format(res)+ '\n')
+  st.write('You: {}'.format(message)+ '\n')
